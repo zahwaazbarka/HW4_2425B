@@ -15,6 +15,8 @@ private:
 	Job* playerJob;
 	CharacterType* playerCharacter;
 public:
+	GamePlayer()= default;
+
 	GamePlayer(const std::string& name,Job* job,CharacterType* character);
 
 	std::string getName() const override;

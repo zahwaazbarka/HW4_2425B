@@ -5,6 +5,8 @@
 
 class Responsible: public CharacterType{
 public:
+	Responsible()= default;
+
 	int shouldBuyPotion(int currentHp,int maxHp,int coins) const override{
 		int missingHp = maxHp-currentHp;
 		int neededAmountByHealth = (missingHp/10) +1;

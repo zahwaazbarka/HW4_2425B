@@ -7,6 +7,8 @@ class Pack: public Monster{
 private:
 std::vector<std::shared_ptr<Monster>> monsters;
 public:
+	Pack()= default;
+
 void addMonster(std::shared_ptr<Monster> monster){
 	monsters.push_back(monster);
 }
@@ -22,7 +24,7 @@ int getLoot() const override{
 	return sumLoot;
 }
 
-int getCombatPower() const override{
+int getDamage() const override{
 	int sumDamage =0;
 	for(const auto& m:monsters) sumDamage+= m->getDamage();
 	return sumDamage;
