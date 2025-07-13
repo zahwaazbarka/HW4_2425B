@@ -11,7 +11,7 @@ public:
 		return "Magician";
 	}
 	void onScolarEclipse(Player& player) const{
-		player.addForce();
+		player.addForce(1);
 	}
 
 	bool isRanged() const override{

@@ -11,7 +11,7 @@ public:
 		return "Archer";
 	}
 	void onScolarEclipse(Player& player) const{
-		player.subtractForce();
+		player.subtractForce(1);
 	}
 
 

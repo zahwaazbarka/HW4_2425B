@@ -11,7 +11,7 @@ public:
 		return "Warrior";
 	}
 	void onScolarEclipse(Player& player) const{
-		player.subtractForce();
+		player.subtractForce(1);
 	}
 
 	bool isRanged() const override{
