@@ -27,7 +27,7 @@ int getCombatPower() const override{
 	for(const auto& m:monsters) sumDamage+= m->getDamage();
 	return sumDamage;
 }
-std::string getMonsterName() const override{
+std::string getDescription() const override{
 	return "Pack";
 }
 

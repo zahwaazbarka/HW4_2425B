@@ -13,7 +13,7 @@ public:
 	int getDamage() const override{
 		return 10;
 	}
-	std::string getMonsterName() const override {return "Snail";}
+	std::string getDescription() const override {return "Snail";}
 
 
 
