@@ -7,45 +7,27 @@ using std::string;
 
 class Player {
 public:
-    /**
-     * Gets the description of the player
-     *
-     * @return - description of the player
-    */
-    string getDescription() const;
 
-    /**
-     * Gets the name of the player
-     *
-     * @return - name of the player
-    */
-    string getName() const;
+    virtual string getDescription() const;
 
-    /**
-     * Gets the current level of the player
-     *
-     * @return - level of the player
-    */
-    int getLevel() const;
 
-    /**
-     * Gets the of force the player has
-     *
-     * @return - force points of the player
-    */
-    int getForce() const;
+    virtual string getName() const=0;
+    virtual int getLevel() const=0;
+    virtual int getForce() const=0;
+    virtual int getHealthPoints() const=0;
+    virtual int getMaxHealthPoints() const=0;
+    virtual int getCoins() const=0;
 
-    /**
-     * Gets the amount of health points the player currently has
-     *
-     * @return - health points of the player
-    */
-    int getHealthPoints() const;
+	virtual void addForce(int amount)=0;
+    virtual void subtractForce(int amount)=0;
 
-    /**
-     * Gets the amount of coins the player has
-     *
-     * @return - coins of the player
-    */
-    int getCoins() const;
+	virtual void heal(int amount) =0;
+	virtual void damage(int amount) =0;
+	virtual void levelUp(int amount) =0;
+	virtual void pay(int amount) =0;
+	virtual void earn(int amount) =0;
+
+    virtual void playTurn(Event* event) =0;
+
+    virtual ~Player() = default;
 };
