@@ -5,10 +5,7 @@
 
 class Event {
 public:
-    /**
-     * Gets the description of the event
-     *
-     * @return - the description of the event
-    */
-    string getDescription() const;
+    virtual void apply(Player* Player)=0;
+    virtual string getDescription() const=0;
+    virtual ~Event() = default;
 };
