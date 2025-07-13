@@ -24,6 +24,8 @@ public:
 	int getMaxHealthPoints() const override;
 	int getCoins() const override;
 
+	Job* getJob() const override{return playerJob;}
+	CharacterType* getCharacter() const override{return playerCharacter;}
 	void addForce(int amount)  override;
 	void subtractForce(int amount) override;
 	void heal(int amount) override;

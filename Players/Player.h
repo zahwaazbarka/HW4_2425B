@@ -2,7 +2,8 @@
 #pragma once
 
 #include <string>
-
+#include "Job.h"
+#include "CharacterType.h"
 using std::string;
 
 class Player {
@@ -17,6 +18,8 @@ public:
     virtual int getHealthPoints() const=0;
     virtual int getMaxHealthPoints() const=0;
     virtual int getCoins() const=0;
+    virtual Job* getJob() const =0;
+    virtual CharacterType* getCharacter() const =0;
 
 	virtual void addForce(int amount)=0;
     virtual void subtractForce(int amount)=0;
@@ -28,6 +31,7 @@ public:
 	virtual void earn(int amount) =0;
 
     virtual void playTurn(Event* event) =0;
+    virtual std::string getDescription();
 
     virtual ~Player() = default;
 };
