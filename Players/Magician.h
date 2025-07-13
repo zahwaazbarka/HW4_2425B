@@ -12,7 +12,7 @@ public:
 	std::string getJobName() const override{
 		return "Magician";
 	}
-	void onScolarEclipse(Player& player) const{
+	void onSolarElipse(Player& player) const{
 		player.addForce(1);
 	}
 

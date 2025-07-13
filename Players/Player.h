@@ -4,15 +4,16 @@
 #include <string>
 #include "Job.h"
 #include "CharacterType.h"
-using std::string;
 
+using std::string;
+class Event;
 class Player {
 public:
 
-    virtual string getDescription() const;
+    virtual std::string getDescription() const;
 
 
-    virtual string getName() const=0;
+    virtual std::string getName() const=0;
     virtual int getLevel() const=0;
     virtual int getForce() const=0;
     virtual int getHealthPoints() const=0;

@@ -4,10 +4,10 @@
 class SolarEclipse :public Event{
 public:
 void apply(Player* player) override{
-	player->getJob()->onScolarExlipse(*player);
+	player->getJob()->onSolarEclipse(*player);
 }
 std::string getDescription() const override{
-	return "Solar Eclipse";
+	return "SolarEclipse";
 }
 
 };
