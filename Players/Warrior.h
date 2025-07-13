@@ -8,11 +8,14 @@ public:
 		return player.getForce() * 2 + player.getLevel();
 	}
 	std::string getJobName() const override{
-		return "warrior";
+		return "Warrior";
 	}
 	void onScolarEclipse(Player& player) const{
 		player.subtractForce();
 	}
 
+	bool isRanged() const override{
+		return false;
+	}
 
 };
