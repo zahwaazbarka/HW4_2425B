@@ -4,6 +4,8 @@
 
 class Archer :public Job{
 public:
+	Archer()= default;
+
 	int getCombatPower(const Player& player) const override{
 		return player.getForce() + player.getLevel();
 	}

@@ -4,6 +4,8 @@
 
 class Warrior :public Job{
 public:
+	Warrior()= default;
+
 	int getCombatPower(const Player& player) const override{
 		return player.getForce() * 2 + player.getLevel();
 	}

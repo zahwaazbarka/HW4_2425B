@@ -3,6 +3,8 @@
 
 class Snail :public Monster{
 public:
+	Snail()= default;
+
 	int getCombatPower() const override{
 		return 5;
 	}

@@ -1,10 +1,11 @@
 
 #include "Monster.h"
 
-class balrog :public Monster{
+class Balrog :public Monster{
 private:
 	int balrogCombatPower = 9001;
 public:
+	Balrog()= default;
 	int getCombatPower() const override{
 		return 15;
 	}

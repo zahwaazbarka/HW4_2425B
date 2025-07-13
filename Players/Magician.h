@@ -4,6 +4,8 @@
 
 class Magician :public Job{
 public:
+	Magician()= default;
+
 	int getCombatPower(const Player& player) const override{
 		return player.getForce() + player.getLevel();
 	}

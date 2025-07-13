@@ -3,6 +3,8 @@
 
 class Slime :public Monster{
 public:
+	Slime() = default;
+
 	int getCombatPower() const override{
 		return 12;
 	}
