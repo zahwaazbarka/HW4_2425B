@@ -1,4 +1,4 @@
-
+#pragama once
 #include "CharacterType.h"
 
 class RiskTaking: public CharacterType{
