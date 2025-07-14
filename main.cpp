@@ -15,6 +15,7 @@ int main(int argc, char** argv) {
     if (argc != 3) {
         cout << "Invalid number of arguments" << endl;
         cout << "Usage: MatamStory <events_file_path> <players_file_path>" << endl;
+        return 1;
     }
 
     ifstream eventsStream(argv[1]);
@@ -37,4 +38,5 @@ int main(int argc, char** argv) {
         cout << e.what() << endl;
         return 1;
     }
+    return 0;
 }
