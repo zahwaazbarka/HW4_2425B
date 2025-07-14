@@ -1,10 +1,13 @@
+#pragma once
 
 #include "GamePlayer.h"
 #include "../Events/Event.h"
 #include <stdexcept>
+
 GamePlayer::GamePlayer(const std::string& name,Job* job,CharacterType* character):
 playerName(name),playerLevel(1),playerForce(5),playerJob(job),playerCharacter(character)
 {
+	playerMaxHP = 100;
 	if(job->getJobName() == "Warrior")
 	{
 		playerMaxHP = 150;
@@ -12,12 +15,10 @@ playerName(name),playerLevel(1),playerForce(5),playerJob(job),playerCharacter(ch
 	}
 	else if(job->getJobName() == "Archer")
 	{
-		playerMaxHP = 100;
 		playerCoins = 20;
 	}
 	else if(job->getJobName() == "Magician")
 	{
-		playerMaxHP = 100;
 		playerCoins = 10;
 	}
 	playerCurrentHP = playerMaxHP;
@@ -26,6 +27,11 @@ playerName(name),playerLevel(1),playerForce(5),playerJob(job),playerCharacter(ch
 
 std::string GamePlayer::getName() const{
 	return playerName;
+}
+std::string GamePlayer::getDescription() const{
+	return playerName + ", " +playerJob->getJobName() +
+	   " with " + playerCharacter->getCharacterType() +
+	   " character (level " + std::to_string(playerLevel) + ", force "+std::to_string(playerForce)+")";
 }
 
 int GamePlayer::getLevel() const{
@@ -51,6 +57,10 @@ int GamePlayer::getCoins() const{
 void GamePlayer::addForce(int amount)
 {
 	playerForce += amount;
+}
+void GamePlayer::subtractForce(int amount)
+{
+	playerForce -= amount;
 }
 void GamePlayer::heal(int amount)
 {
@@ -94,13 +104,21 @@ void GamePlayer::earn(int amount)
 {
 	playerCoins+=amount;
 }
-/*
+
 void GamePlayer::playTurn(Event* event)
 {
 	if(event)
 	{
+		event->apply(this);
 
 	}
 }
-*/
+bool GamePlayer::isKnockedOut() const {
+	return playerCurrentHP <= 0;
+}
+
+bool GamePlayer::hasWon() const {
+	return playerLevel == 10;
+}
+
 
