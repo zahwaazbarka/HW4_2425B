@@ -1,7 +1,8 @@
-#pragma once
+#ifndef PLAYER_H
+#define PLAYER_H
 
 #include <string>
-#include "../Jobs/Job.h"
+#include "Jobs/Job.h"
 #include "CharacterType.h"
 
 using std::string;
@@ -37,3 +38,4 @@ public:
 
     virtual ~Player() = default;
 };
+#endif

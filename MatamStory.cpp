@@ -80,8 +80,10 @@ vector<shared_ptr<Player>> parsePlayers(istream& in) {
     return players;
 }
 
-MatamStory::MatamStory(istream& eventsStream, istream& playersStream)
-    : m_turnIndex(1), m_events(parseEvents(eventsStream)), m_players(parsePlayers(playersStream)) {}
+MatamStory::MatamStory(std::istream& eventsStream, std::istream& playersStream)
+    : m_turnIndex(1),
+      m_players(parsePlayers(playersStream)),
+      m_events(parseEvents(eventsStream)) {}
 
 void MatamStory::playTurn(Player& player) {
     Event& event = *m_events[(m_turnIndex - 1) % m_events.size()];
