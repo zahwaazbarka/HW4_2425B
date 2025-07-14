@@ -1,4 +1,4 @@
-#pragma once
+
 
 #include "GamePlayer.h"
 #include "../Events/Event.h"
