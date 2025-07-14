@@ -1,6 +1,6 @@
 #pragma once
 #include "Player.h"
-#include "Players/Jobs/Job.h"
+#include "Job.h"
 #include "CharacterType.h"
 #include <string>
 
