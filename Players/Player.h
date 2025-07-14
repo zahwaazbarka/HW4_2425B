@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "Job.h"
+#include "../Jobs/Job.h"
 #include "CharacterType.h"
 
 using std::string;
