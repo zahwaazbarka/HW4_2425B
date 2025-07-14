@@ -1,4 +1,4 @@
-#pragama once
+#pragma once
 #include "CharacterType.h"
 
 class RiskTaking: public CharacterType{
