@@ -1,4 +1,4 @@
-
+#pragma once
 #include "Job.h"
 #include "../Player.h"
 
