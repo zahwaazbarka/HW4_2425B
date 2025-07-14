@@ -2,7 +2,7 @@
 #define PLAYER_H
 
 #include <string>
-#include "Jobs/Job.h"
+#include "Players/Jobs/Job.h"
 #include "CharacterType.h"
 
 using std::string;
