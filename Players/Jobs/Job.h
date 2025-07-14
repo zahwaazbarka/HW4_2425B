@@ -11,7 +11,7 @@ virtual int getCombatPower(const Player& player) const=0;
 
 virtual std::string getJobName () const=0;
 
-virtual void onSolarEclipse(Player& player) const=0;
+virtual int onSolarEclipse(Player& player) const=0;
 
 virtual bool isRanged() const=0;
 
