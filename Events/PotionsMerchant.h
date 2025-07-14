@@ -1,11 +1,12 @@
+#pragma once
 
 #include "Event.h"
 #include "../Players/Player.h"
-
+#include "../Utilities.h"
 class PotionsMerchant: public Event
 {
 public:
-	void apply(Player* player) override{
+	std::string apply(Player* player) override{
 		int count =player->getCharacter()->shouldBuyPotion(player->getHealthPoints()
 		,player->getMaxHealthPoints(),
 		player->getCoins());
@@ -16,10 +17,10 @@ public:
 			player->pay(cost);
 			player->heal(heal);
 		}
-
+		return getPotionsPurchaseMessage(*player, count);
 	}
 	std::string getDescription()const override{
-		return "Potions Merchant";
+		return "PotionsMerchant";
 	}
 };
 
