@@ -11,9 +11,9 @@
 #include "Events/Monsters/Balrog.h"
 #include "Events/Monsters/Pack.h"
 #include "Players/GamePlayer.h"
-#include "Players/Jobs/Warrior.h"
-#include "Players/Jobs/Magician.h"
-#include "Players/Jobs/Archer.h"
+#include "Jobs/Warrior.h"
+#include "Jobs/Magician.h"
+#include "Jobs/Archer.h"
 #include "Players/Resposible.h"
 #include "Players/RiskTaking.h"
 
