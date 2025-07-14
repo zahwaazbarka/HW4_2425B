@@ -1,7 +1,8 @@
-
+#pragma once
 #include "Player.h"
-#include "Job.h"
+#include "Jobs/Job.h"
 #include "CharacterType.h"
+#include <string>
 
 class GamePlayer :public Player{
 private:
@@ -15,8 +16,6 @@ private:
 	Job* playerJob;
 	CharacterType* playerCharacter;
 public:
-	GamePlayer()= default;
-
 	GamePlayer(const std::string& name,Job* job,CharacterType* character);
 
 	std::string getName() const override;
@@ -37,6 +36,10 @@ public:
 	void earn(int amount) override;
 
 	void playTurn(Event* event)override;
+	std::string getDescription() const override;
+	bool isKnockedOut() const override;
+	bool hasWon() const override;
+
 
 	~GamePlayer() override= default;
 
