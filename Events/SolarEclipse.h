@@ -1,10 +1,13 @@
-#include "Event.h"
+
+#pragma once
 #include "../Players/Player.h"
 
 class SolarEclipse :public Event{
 public:
-void apply(Player* player) override{
-	player->getJob()->onSolarEclipse(*player);
+std::string apply(Player* player) override{
+	int amount = player->getJob()->onSolarEclipse(*player);
+	return getSolarEclipseMessage(*player, amount);
+
 }
 std::string getDescription() const override{
 	return "SolarEclipse";
