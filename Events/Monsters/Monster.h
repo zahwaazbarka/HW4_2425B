@@ -1,5 +1,4 @@
 #pragma once
-#include "Monster.h"
 #include <string>
 class Event;
 
