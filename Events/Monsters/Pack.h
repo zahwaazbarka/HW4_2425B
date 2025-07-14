@@ -30,7 +30,7 @@ int getDamage() const override{
 	return sumDamage;
 }
 std::string getDescription() const override{
-	return "Pack";
+	return "Pack of "+std::to_string(monsters.size())+" members";
 }
 
 };
