@@ -1,6 +1,6 @@
 
 #include "Job.h"
-#include "Player.h"
+#include "../Player.h"
 
 class Archer :public Job{
 public:
@@ -12,8 +12,9 @@ public:
 	std::string getJobName() const override{
 		return "Archer";
 	}
-	void onSolarEclipse(Player& player) const override{
+	int onSolarEclipse(Player& player) const override{
 		player.subtractForce(1);
+		return -1;
 	}
 
 
