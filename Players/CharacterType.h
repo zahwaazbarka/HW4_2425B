@@ -5,7 +5,7 @@ class CharacterType{
 public:
 
 	virtual int shouldBuyPotion(int currentHp,int maxHp,int coins) const =0;
-
+	virtual std::string getCharacterType() const =0;
 	
 	virtual ~CharacterType()=default;
 };
