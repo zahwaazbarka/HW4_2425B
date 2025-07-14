@@ -2,7 +2,7 @@
 #pragma once
 
 #include <string>
-#include "Job.h"
+#include "Jobs/Job.h"
 #include "CharacterType.h"
 
 using std::string;
@@ -10,8 +10,8 @@ class Event;
 class Player {
 public:
 
-    virtual std::string getDescription() const;
-
+	virtual bool hasWon() const = 0;
+	virtual bool isKnockedOut() const = 0;
 
     virtual std::string getName() const=0;
     virtual int getLevel() const=0;
@@ -32,7 +32,8 @@ public:
 	virtual void earn(int amount) =0;
 
     virtual void playTurn(Event* event) =0;
-    virtual std::string getDescription();
+	virtual std::string getDescription() const = 0;
+
 
     virtual ~Player() = default;
 };
