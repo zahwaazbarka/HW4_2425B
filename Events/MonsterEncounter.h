@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Event.h"
-#include "Monsters/Monster.h"
+#include "Monster.h"
 
 class MonsterEncounter:public Event
 {
