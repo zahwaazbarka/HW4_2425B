@@ -2,6 +2,8 @@
 
 #include "MatamStory.h"
 
+#include <memory>
+
 #include "Utilities.h"
 #include "Events/MonsterEncounter.h"
 #include "Events/PotionsMerchant.h"

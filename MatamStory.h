@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 
+#include <memory>
+
 #include "Players/Player.h"
 #include "Events/Event.h"
 

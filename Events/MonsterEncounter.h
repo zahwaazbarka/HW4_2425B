@@ -2,6 +2,7 @@
 
 #include "Event.h"
 #include "Monster.h"
+#include <memory>
 
 class MonsterEncounter:public Event
 {

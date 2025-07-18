@@ -1,6 +1,8 @@
 #include "MonsterEncounter.h"
 #include "../Players/Player.h"
 #include "../Utilities.h"
+#include <memory>
+
 
 std::string MonsterEncounter::apply(Player* player)
 {

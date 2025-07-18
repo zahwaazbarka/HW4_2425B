@@ -2,6 +2,7 @@
 
 #include "Monster.h"
 #include <vector>
+#include <memory>
 
 class Pack: public Monster{
 private:
