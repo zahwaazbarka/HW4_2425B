@@ -3,6 +3,7 @@
 #include "MatamStory.h"
 
 #include <memory>
+#include <algorithm>
 
 #include "Utilities.h"
 #include "Events/MonsterEncounter.h"
