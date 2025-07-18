@@ -66,7 +66,7 @@ vector<shared_ptr<Event>> parseEvents(istream& in) {
         }
         else if (tokens[0] == "Snail" || tokens[0] == "Slime" || tokens[0] == "Balrog") {
             if (tokens.size() > 1)
-                throw runtime_error("Unexpected tokens after monster");
+                throw runtime_error("Invalid Events File");
             events.push_back(make_shared<MonsterEncounter>(createMonster(tokens[0])));
         } else {
             int counter = 0;
@@ -74,7 +74,7 @@ vector<shared_ptr<Event>> parseEvents(istream& in) {
 
             for (size_t i = 0; i < tokens.size(); ++i) {
                 if (tokens[i] == "Pack") {
-                    if (i + 1 >= tokens.size()) throw runtime_error("Missing count after Pack");
+                    if (i + 1 >= tokens.size()) throw runtime_error("Invalid Events File");
                     int count = stoi(tokens[i + 1]);
                     counter += count;
                     ++i;
@@ -83,7 +83,7 @@ vector<shared_ptr<Event>> parseEvents(istream& in) {
                 }
             }
             if ((int)monsterNames.size() != counter) {
-                throw runtime_error("Mismatch between expected and actual monster count in Pack line");
+                throw runtime_error("Invalid Events File");
             }
 
             auto pack = make_shared<Pack>();
