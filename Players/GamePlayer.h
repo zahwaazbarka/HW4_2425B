@@ -41,6 +41,9 @@ public:
 	bool hasWon() const override;
 
 
-	~GamePlayer() override= default;
+	~GamePlayer() override {
+		delete playerJob;
+		delete playerCharacter;
+	}
 
 };
