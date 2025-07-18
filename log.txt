@@ -1,3 +1,271 @@
+* commit 58ba01b08d6e5cb8dd1934ad297a09721a85d7a0
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Fri Jul 18 16:29:23 2025 +0300
+| 
+|     add destructor that delete playerjob and playercharacter
+| 
+|  Players/GamePlayer.h | 5 ++++-
+|  1 file changed, 4 insertions(+), 1 deletion(-)
+| 
+* commit ed4be3bff2ef91b5455ae2e3982bf6a99cc078c6
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Fri Jul 18 16:05:39 2025 +0300
+| 
+|     add include algorithm
+| 
+|  MatamStory.cpp | 1 +
+|  1 file changed, 1 insertion(+)
+| 
+* commit 89626cc73aa45507d0bcf65092f12eb07a2e9524
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Fri Jul 18 16:02:48 2025 +0300
+| 
+|     add include memory
+| 
+|  Events/MonsterEncounter.cpp | 2 ++
+|  Events/MonsterEncounter.h   | 1 +
+|  Events/Pack.h               | 1 +
+|  MatamStory.cpp              | 2 ++
+|  MatamStory.h                | 2 ++
+|  5 files changed, 8 insertions(+)
+| 
+* commit d95fc30f67440ab0892900123d0c57f3205e07a0
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Fri Jul 18 15:58:07 2025 +0300
+| 
+|     fix the include
+| 
+|  MatamStory.cpp | 14 +++++++-------
+|  1 file changed, 7 insertions(+), 7 deletions(-)
+| 
+* commit dac62ef861b6e6663ea98a2dfdaeb735cf8cb88e
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Fri Jul 18 15:54:37 2025 +0300
+| 
+|     fix the include
+| 
+|  Events/Balrog.h    | 31 +++++++++++++++++++++++++++++++
+|  Events/Pack.h      | 36 ++++++++++++++++++++++++++++++++++++
+|  Events/Slime.h     | 25 +++++++++++++++++++++++++
+|  Events/Snail.h     | 25 +++++++++++++++++++++++++
+|  Players/Archer.h   | 26 ++++++++++++++++++++++++++
+|  Players/Magician.h | 25 +++++++++++++++++++++++++
+|  Players/Warrior.h  | 24 ++++++++++++++++++++++++
+|  7 files changed, 192 insertions(+)
+| 
+* commit 756db1f108c67e2343b3ec23bf11ff2ed070d8d9
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Tue Jul 15 00:08:19 2025 +0300
+| 
+|     fix the include
+| 
+|  Events/Monster.h          | 17 +++++++++++++++++
+|  Events/MonsterEncounter.h |  2 +-
+|  2 files changed, 18 insertions(+), 1 deletion(-)
+| 
+* commit 100eb5f0e65b5d42ab42192c8f425f7c803ba294
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Tue Jul 15 00:04:59 2025 +0300
+| 
+|     fix the include
+| 
+|  Players/GamePlayer.h     | 2 +-
+|  Players/{Jobs => }/Job.h | 0
+|  Players/Player.h         | 2 +-
+|  3 files changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit 45d8403c5fab439a63bc83fa8a634f9dcd902146
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:56:07 2025 +0300
+| 
+|     fix the include
+| 
+|  Players/GamePlayer.h              | 2 +-
+|  {Jobs => Players/Jobs}/Archer.h   | 0
+|  {Jobs => Players/Jobs}/Job.h      | 0
+|  {Jobs => Players/Jobs}/Magician.h | 0
+|  {Jobs => Players/Jobs}/Warrior.h  | 0
+|  Players/Player.h                  | 2 +-
+|  6 files changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit b3a5de03b7b8ae8f531217dd65bb50087eb59ddd
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:50:07 2025 +0300
+| 
+|     fix the include
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit a8e3eda96609021908b8424125227fbc78b9d493
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:48:49 2025 +0300
+| 
+|     fix the include
+| 
+|  MatamStory.cpp       | 6 +++---
+|  Players/GamePlayer.h | 2 +-
+|  Players/Player.h     | 2 +-
+|  3 files changed, 5 insertions(+), 5 deletions(-)
+| 
+* commit 237274dfc45f02bcd75fba4536e7b7803eefd024
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:44:28 2025 +0300
+| 
+|     change jobs dirictary to not get include error
+| 
+|  {Players/Jobs => Jobs}/Archer.h   | 2 +-
+|  {Players/Jobs => Jobs}/Job.h      | 0
+|  {Players/Jobs => Jobs}/Magician.h | 2 +-
+|  {Players/Jobs => Jobs}/Warrior.h  | 2 +-
+|  4 files changed, 3 insertions(+), 3 deletions(-)
+| 
+* commit 55a5e66461a0926bfe88d316c7014cee434befee
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:37:30 2025 +0300
+| 
+|     fix include bug
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit f1f7b8dc0aed0bc502d5c1439ee65dd62ecca452
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:36:19 2025 +0300
+| 
+|     fix include bug
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit e6fd3c7c352a071eb4aec9f3ba6699be7f328f20
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:32:30 2025 +0300
+| 
+|     fix include bug
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 1c446c1d0240728fede836ae0dcd1f0f698917b8
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 23:29:10 2025 +0300
+| 
+|     fix include bug
+| 
+|  MatamStory.cpp       | 6 ++++--
+|  Players/GamePlayer.h | 2 +-
+|  Players/Player.h     | 6 ++++--
+|  3 files changed, 9 insertions(+), 5 deletions(-)
+| 
+* commit aa69792044641612c20e349483bc73a8524fbdfd
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:11:29 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 64edeae87e7c87201e73d60544e57efcf4e73f8c
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:11:15 2025 +0300
+| 
+|     Update GamePlayer.h
+| 
+|  Players/GamePlayer.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 1a77dc4c2366cdaecd567d50a8054c2e5510b989
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:07:04 2025 +0300
+| 
+|     Update GamePlayer.h
+| 
+|  Players/GamePlayer.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit b8660696d3f332bd2fb214ac44cc27cc1f19b905
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:06:42 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit a4ec9045153efba4018a769d3fa8bd1d5896f295
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:04:26 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 44 ++++++++++++++++++++++----------------------
+|  1 file changed, 22 insertions(+), 22 deletions(-)
+| 
+* commit 0be95ecf6da5cd0c1c5b5b226b3018296efacb25
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:01:33 2025 +0300
+| 
+|     Update GamePlayer.h
+| 
+|  Players/GamePlayer.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit c169c0e8c3a0b1fec59e956ef21bdae2690336ca
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 23:01:20 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 5d10cbca0070a861e46f778bfe87612f80946b18
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 22:57:51 2025 +0300
+| 
+|     Update GamePlayer.h
+| 
+|  Players/GamePlayer.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit c25df7815e2426fee9b7e22b708e62cad26fc74b
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 22:56:14 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit ba2766e05015354cf6f405bffe1db38dfd1af134
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 22:49:09 2025 +0300
+| 
+|     Update GamePlayer.h
+| 
+|  Players/GamePlayer.h | 4 ++--
+|  1 file changed, 2 insertions(+), 2 deletions(-)
+| 
+* commit 4f08459502a2b31b553747ed6de90fd01a6c408e
+| Author: zahwaazbarka <zahwaazbarka@gmail.com>
+| Date:   Mon Jul 14 22:48:40 2025 +0300
+| 
+|     Update Player.h
+| 
+|  Players/Player.h | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit 42387eec90cfb4796cd726b4b79aa73e9a441684
+| Author: ward khleif <w4rdkh@gmail.com>
+| Date:   Mon Jul 14 22:45:47 2025 +0300
+| 
+|     add log.txt
+| 
+|  log.txt | 554 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|  1 file changed, 554 insertions(+)
+| 
 * commit 18a6718311dd463382286d5540e1c9c268658530
 | Author: zahwaazbarka <zahwaazbarka@gmail.com>
 | Date:   Mon Jul 14 22:42:59 2025 +0300
